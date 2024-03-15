@@ -67,7 +67,7 @@
         android:id="@+id/waveProgressBar"
         android:layout_width="262dp"
         android:layout_height="219dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="140dp"
         app:arc_color="#D4F1FD"
         app:behind_wave_color="#01A1D6"
         app:cavans_bg="#fff"

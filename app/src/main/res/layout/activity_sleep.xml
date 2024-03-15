@@ -40,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="55dp"
         android:text="Good Job!"
         android:textColor="#959E9F"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -51,7 +51,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="85dp"
         android:text="Your Daily Tasks\n    Almost Done"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -64,13 +64,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="412dp"
-        android:layout_height="320dp"
+        android:layout_height="220dp"
         android:background="@drawable/waterseccard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="412dp">
+        app:layout_constraintRight_toRightOf="parent">
 
         <TextView
             android:id="@+id/textView9"
@@ -240,10 +238,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="282dp"
+        android:layout_width="288dp"
         android:layout_height="238dp"
-        android:layout_marginTop="164dp"
-        android:background="@drawable/moonwall"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/moonwall2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"

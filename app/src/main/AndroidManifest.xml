@@ -31,5 +31,6 @@
         <activity android:name=".ExersiceActivity" />
         <activity android:name=".SleepActivity" />
 
+
     </application>
 </manifest>
