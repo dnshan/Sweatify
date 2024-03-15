@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#E0E0E0"/> <!-- This is the color of the progress bar background -->
+            <corners android:radius="16dp"/> <!-- This is the radius of the corner rounding -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#45ACFF"/> <!-- This is the color of the progress -->
+                <corners android:radius="16dp"/> <!-- This should match the background to maintain the rounded look as it progresses -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

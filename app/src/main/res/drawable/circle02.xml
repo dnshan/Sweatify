@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#FFF6E0" />
+
+        </shape>
+    </item>
+    <!-- Foreground progress of the progress bar -->
+
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:innerRadiusRatio="2.5"
+                android:thicknessRatio="15"
+                android:useLevel="true">
+                <solid android:color="#FCBB1D" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#E81DFC</color>
+    <color name="red">#FC361D</color>
+    <color name="blue">#621DFC</color>
+    <color name="grayTextColor">#959E9F</color>
+    <color name="caloriesIcon">#FFE8E8</color>
+    <color name="caloriestextcolor">#FFB500</color>
+    <color name="caloriesmain">#FFF6E0</color>
+    <color name="stepsmain">#EFF0FF</color>
+    <color name="sleepmain">#DDFFDA</color>
+    <color name="watermain">#EEF7FF</color>
+
+</resources>

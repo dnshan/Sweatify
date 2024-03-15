@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFC7"
+    android:backgroundTint="#FFEFC7">
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFEFC7"
+        android:contentDescription="@string/back_button_description"
+        android:src="@drawable/backnav"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Calories Details"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Keep Going!"
+        android:textColor="#959E9F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="You have to eat\n More calories!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/caloriesconstlayout"
+        android:layout_width="220dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/roundshape"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarCalories"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:progress="80">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/fire"
+            android:text="156"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/calo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:text="Calories"
+            android:textColor="#959E9F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollviewcalory"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="489dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrolviewcard"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/waterseccard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="My Activity"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:drawableEnd="@drawable/moondown"
+            android:drawablePadding="10dp"
+            android:text="Today"
+            android:textAlignment="textEnd"
+            android:textColor="#198FB4"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="336dp"
+                android:layout_marginTop="108dp"
+                android:text="28%"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="292dp"
+                android:layout_marginTop="20dp"
+                android:text="100%"
+                android:textColor="#959E9F"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="4dp"
+                android:max="100"
+                android:progress="28"
+
+
+                android:progressDrawable="@drawable/progressbarprotein"
+                app:layout_constraintEnd_toEndOf="@+id/textView48"
+                app:layout_constraintStart_toStartOf="@+id/textView49"
+                app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="20dp"
+                android:text="32%"
+                android:textColor="#E81DFC"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proteintext">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="109dp"
+                android:text="100%"
+                android:textColor="#959E9F"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="40dp"
+                android:max="100"
+                android:progress="32"
+                android:progressDrawable="@drawable/progressbarcarbs"
+                app:layout_constraintEnd_toEndOf="@+id/textView29"
+                app:layout_constraintStart_toStartOf="@+id/textView43"
+                app:layout_constraintTop_toBottomOf="@+id/proteintext" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="108dp"
+                android:text="28%"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginLeft="216dp"
+                tools:layout_marginTop="109dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="108dp"
+                android:text="100%"
+                android:textColor="#959E9F"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginLeft="166dp"
+                tools:layout_marginTop="109dp">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="40dp"
+                android:max="100"
+                android:progress="28"
+                android:progressDrawable="@drawable/progressbarfat"
+                app:layout_constraintEnd_toEndOf="@+id/textView51"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView52"
+                app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="192dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/firesmall"
+                android:text="40 calories in"
+                android:textColor="@color/caloriestextcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginLeft="292dp"
+                tools:layout_marginTop="193dp">
+
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="168dp"
+                android:background="@drawable/caloriesiconbackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginLeft="24dp"
+                tools:layout_marginTop="190dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/apple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="43dp"
+                    tools:layout_editor_absoluteY="53dp"></TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="116dp"
+                android:text="2 apples in a day"
+                android:textColor="@color/grayTextColor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView50"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginLeft="84dp"
+                tools:layout_marginTop="213dp">
+
+            </TextView>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Apple"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_marginLeft="84dp"
+            tools:layout_marginTop="188dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textColor="@color/grayTextColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_marginLeft="25dp"
+            tools:layout_marginTop="152dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/proteintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="68dp"
+            android:text="Protein"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Fat"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginRight="36dp"
+                android:text="Carbs"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="progressBar1" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="progressBar2" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="progressBar3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
